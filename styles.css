@@ -3,6 +3,21 @@ body {
     margin: 0;
     padding: 0;
 }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
 header, main {
     padding: 20px;
@@ -19,4 +34,15 @@ h1, h2, h3 {
 
 #blog .post:last-child {
     border-bottom: none;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
