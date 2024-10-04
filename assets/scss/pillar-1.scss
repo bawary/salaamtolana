@@ -38,7 +38,10 @@ body {
     overflow-x: hidden;
     
 }
-
+.example {
+    float: right;
+    text-align: right;
+}
 a {
 	color: $theme-color-primary;
 	
