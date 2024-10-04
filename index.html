@@ -86,6 +86,25 @@
 										    <div class="resume-position-time">2023 - Present</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
+										    <h2>تجربه کار</h2>
+        <!-- Existing work experience -->
+        <div id="posts"></div>
+    </section>
+
+    <script>
+        async function fetchPosts() {
+            const response = await fetch('/posts');
+            const posts = await response.json();
+            const postsContainer = document.getElementById('posts');
+            posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.innerHTML = `<h3>${post.title}</h3><p>${new Date(post.date).toLocaleDateString()}</p><p>${post.content}</p>`;
+                postsContainer.appendChild(postElement);
+            });
+        }
+
+        fetchPosts();
+    </script>
 										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
 										    <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
