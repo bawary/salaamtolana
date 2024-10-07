@@ -78,13 +78,25 @@
 										    <div class="resume-position-time">2023 - Present</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-                                            <section id="blog">
-            <h2>Blog</h2>
-            <div id="posts">
-                <!-- Blog posts will be inserted here -->
-            </div>
-        </section>
-               <script src="scripts.js"></script>
+                                            <div id="article-content">
+    <!-- Article content will be dynamically inserted here -->
+  </div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get('id');
+    const article = JSON.parse(localStorage.getItem(articleId));
+
+    if (article) {
+      document.getElementById('article-content').innerHTML = `
+        <h1>${article.title}</h1>
+        <p>By ${article.author} on ${article.date}</p>
+        <img src="${article.image}" alt="${article.title}">
+        <p>${article.content}</p>
+      `;
+    } else {
+      document.getElementById('article-content').innerHTML = '<p>Article not found.</p>';
+    }
+  </script>
                                  
 										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
