@@ -50,20 +50,20 @@
 					    
 				    </div><!--//col-->
 			    </div><!--//row-->
-			    
+			    <script>
+        function updateDate() {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const today = new Date().toLocaleDateString('ps-AF', options);
+            document.getElementById('current-date').innerText = today;
+        }
+        window.onload = updateDate;
+    </script>
 		    </header>
 		    <div class="resume-body p-5">
 			    <section class="resume-section summary-section mb-5">
-				    <div id="current-date"></div>
+				    <p>نننۍ نېټه: <span id="current-date"></span></p>
 
-    <script>
-        const days = ["یکشنبه", "دوشنبه", "سه‌شنبه", "چهارشنبه", "پنج‌شنبه", "جمعه", "شنبه"];
-        const months = ["جنوری", "فبروری", "مارچ", "اپریل", "می", "جون", "جولای", "اګست", "سپتمبر", "اکتوبر", "نومبر", "دسمبر"];
-        const date = new Date();
-        const currentDate = `${days[date.getDay()]}، ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
-
-        document.getElementById("current-date").innerHTML = currentDate;
-    </script>
+    
 				    <div class="resume-section-content">
 					<div id="articles-list">
     <!-- Articles will be dynamically inserted here -->
