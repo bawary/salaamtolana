@@ -51,13 +51,14 @@
 				    </div><!--//col-->
 			    </div><!--//row-->
 			    <script>
-        function updateDate() {
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            const today = new Date().toLocaleDateString('ps-AF', options);
-            document.getElementById('current-date').innerText = today;
-        }
-        window.onload = updateDate;
-    </script>
+    function updateDate() {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date().toLocaleDateString('ps-AF', options);
+        console.log(today); // Add this line
+        document.getElementById('current-date').innerText = today;
+    }
+    window.onload = updateDate;
+</script>
 		    </header>
 		    <div class="resume-body p-5">
 			    <section class="resume-section summary-section mb-5">
