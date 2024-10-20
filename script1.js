@@ -12,7 +12,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     const data = await response.json();
     if (response.ok) {
         localStorage.setItem('token', data.token);
-        alert('Logged in successfully!');
+        window.location.href = 'post.html'; // Redirect to the post page
     } else {
         alert('Invalid credentials');
     }
@@ -34,24 +34,8 @@ document.getElementById('postForm').addEventListener('submit', async (event) => 
     });
     if (response.ok) {
         alert('Article posted successfully!');
-        loadArticles();
+        // Optionally redirect or clear the form
     } else {
         alert('Failed to post article');
     }
 });
-
-async function loadArticles() {
-    const response = await fetch('/articles');
-    const articles = await response.json();
-    const articlesDiv = document.getElementById('articles');
-    articlesDiv.innerHTML = articles.map(article => `
-        <div>
-            <h3>${article.title}</h3>
-            <p>${article.date}</p>
-            <p>${article.author}</p>
-            <p>${article.content}</p>
-        </div>
-    `).join('');
-}
-
-window.onload = loadArticles;
