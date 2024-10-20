@@ -30,7 +30,7 @@ $theme-colors: (
 
 /*************************** Pillar Styles ****************************/
 body {
-    font-family: 'Roboto', sans-serif;  
+    font-family: pashto-font!important;  
     background: $theme-bg-light;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -49,7 +49,9 @@ a {
 		text-decoration: none;
 	}
 }
-
+.pashto-font * {
+    font-family: pashto-font!important
+}
 a.text-link {
 	text-decoration: none;
 	&:hover {
@@ -165,7 +167,7 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 		display: inline-block;
 	    width: 3px;
 	    height: 100%;
-	    background: lighten($theme-color-primary, 40%);
+	    background: #ffffff;
 	    left: 6px;
 	    top: 4px;
 	    position: absolute;
@@ -213,12 +215,12 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 }
 
 .resume-skills-cat {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: $theme-text-color-primary;
 }
 
 .resume-skill-name {
-	font-size: 0.8125rem;
+	font-size: 1.125rem;
 	color: $theme-text-color-primary;
 }
 
