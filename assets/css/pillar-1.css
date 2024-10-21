@@ -191,7 +191,7 @@
 body {
   margin: 0;
   font-family: pashto-font!important;
-  font-size: var(--bs-body-font-size);
+  font-size: 1.2rem;
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
