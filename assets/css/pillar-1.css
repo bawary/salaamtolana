@@ -11810,10 +11810,12 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-header .name {
-  font-size: 2.25rem;
-  letter-spacing: 0.175rem;
-  font-weight: 900;
+    font-family: 'Lateef', sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 0.175rem;
+    font-weight: 900;
 }
+
 
 .resume-header .title {
   font-size: 1.5rem;
