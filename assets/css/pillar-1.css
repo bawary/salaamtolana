@@ -11807,6 +11807,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-header .picture {
   width: 220px;
+  border: 1px solid white;
 }
 
 .resume-header .name {
