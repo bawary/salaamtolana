@@ -228,6 +228,16 @@
   font-weight: 800;
   font-style: normal;
 }
+@font-face {
+    font-family: 'Bahij';
+    src: url('assets/font/bahij.ttf') format('ttf');
+}
+
+.custom-font {
+    font-family: 'Bahij', sans-serif;
+}
+
+
 body {
   margin: 0;
   font-family: 'Lateef', sans-serif !important;
