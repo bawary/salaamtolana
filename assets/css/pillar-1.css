@@ -231,7 +231,7 @@
 body {
   margin: 0;
   font-family: 'Lateef', sans-serif !important;
-  font-size: 1.4rem;
+  font-size: 2.0rem;
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
