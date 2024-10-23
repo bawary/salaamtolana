@@ -230,7 +230,7 @@
 }
 @font-face {
     font-family: 'Bahij';
-    src: url('https://github.com/shamshadzaheer/pashtowebfonts/blob/main/Bahij%20Titr/fonts/BahijTitr-Bold.ttf') format('ttf');
+    src: url('https://github.com/shamshadzaheer/pashtowebfonts/blob/main/Bahij%20Titr/fonts/BahijTitr-Bold.ttf') format('truetype');
 }
 
 .custom-font {
